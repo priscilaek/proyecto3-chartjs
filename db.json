@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Mike"
+        },
+        {
+            "id": 2,
+            "name": "Ramiro"
+        }
+    ],
+    "sales": [
+        {
+            "id": 1,
+            "month": "January",
+            "total":"1000"
+        },
+        {
+            "id": 2,
+            "month": "February",
+            "total":"2000"
+        }
+    ]
+}

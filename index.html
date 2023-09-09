@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chart Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <h1>Chart Dashboard</h1>
+      <p>Visualización de gráficos con chart JS</p>
+      <hr>
+      <section class="cols-2">
+        <figure>
+          <h2>Ventas DB:
+          <div id="dbVentas"></div>
+          </h2>
+        </figure>
+        <figure>
+          <h2>Ventas:
+            <canvas id="exchart"></canvas>
+          </h2>
+      </figure>
+    </section>
+    <section class="cols-1">
+      <figure>
+        <h2>Crypto Historical:
+          <select id="cryptoSelector">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="litecoin">Litecoin</option>
+            <option value="dogecoin">Dogecoin</option>
+          </select>
+          </h2>
+          <div id="app"></div>
+          <div id="app-api" height="300px"></div>
+      </figure>
+    </section>
+    </main>
+    <script src="historicalChart.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
