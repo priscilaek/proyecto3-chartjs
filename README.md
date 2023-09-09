@@ -9,6 +9,8 @@ Este es un proyecto de visualización de datos que utiliza HTML, JavaScript y Ch
 - [Instalación](#instalación)
 - [Instrucciones de Uso](#instrucciones-de-uso)
 - [Estructura de Archivos](#estructura-de-archivos)
+- [Agradecimientos](#agradecimientos)
+- [Estudiante](#estudiante)
 
 ## Descripción
 

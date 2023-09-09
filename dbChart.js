@@ -8,6 +8,15 @@ export const getData = async () => {
   const data = await response.json();
   console.log('data', data);
 
+  function getData() {
+      fetch('./db.json')
+          .then(respuesta => respuesta.json())
+          .then(resultado => {
+              console.log(resultado);
+          });
+  }
+  getData();
+
   // 2. VISTA INICIAL
   document.querySelector('#dbVentas').innerHTML = /* HTML */ `
     <div id="data">
