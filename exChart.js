@@ -21,7 +21,8 @@ export const generateExChart = () => {
       datasets: [
         {
           label: 'Acquisitions by year',
-          data: data.map((row) => row.count)
+          data: data.map((row) => row.count),
+          backgroundColor: 'rgba(146, 213, 63, 0.2)',
         }
       ]
     }

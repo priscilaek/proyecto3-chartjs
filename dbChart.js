@@ -10,9 +10,9 @@ export const getData = async () => {
 
   function getData() {
       fetch('./db.json')
-          .then(respuesta => respuesta.json())
-          .then(resultado => {
-              console.log(resultado);
+          .then(response => response.json())
+          .then(data => {
+              console.log(data);
           });
   }
   getData();
@@ -48,7 +48,8 @@ export const getData = async () => {
       datasets: [
         {   
         label: 'Ventas por mes', 
-        data: data.map((row) => row.total) 
+        data: data.map((row) => row.total),
+        backgroundColor: 'rgba(16, 46, 194, 0.2)'
         }
       ]
     }
