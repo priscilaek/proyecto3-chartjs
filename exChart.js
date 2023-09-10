@@ -3,6 +3,11 @@ import Chart from 'chart.js/auto';
 // IMPORTACIONES
 const myChartArea = document.querySelector('#exchart');
 
+const getDataColors = opacity => {
+  const colors = ['#7448c2', '#21c0d7', '#d99e2b', '#cd3a81', '#9c99cc', '#e14eca', '#ffffff', '#ff0000', '#d6ff00', '#0038ff']
+  return colors.map(color => opacity ? `${color + opacity}` : color)
+}
+
 export const generateExChart = () => {
   const data = [
     { year: 2010, count: 10 },
@@ -15,14 +20,14 @@ export const generateExChart = () => {
   ];
 
   new Chart(myChartArea, {
-    type: 'bar',
+    type: 'pie',
     data: {
       labels: data.map((row) => row.year),
       datasets: [
         {
           label: 'Acquisitions by year',
           data: data.map((row) => row.count),
-          backgroundColor: 'rgba(146, 213, 63, 0.2)',
+          backgroundColor: getDataColors(20)
         }
       ]
     }
